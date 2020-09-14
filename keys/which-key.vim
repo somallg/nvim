@@ -1,12 +1,17 @@
-" Map leader to which_key
-nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+let g:mapleader = "\<Space>"
+
+call which_key#register('<Space>', "g:which_key_map")
+
+" Register which key map
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+
+set timeoutlen=100
 
 " Create map to add keys to
 let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
-" set timeoutlen=100
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
@@ -18,9 +23,9 @@ highlight default link WhichKeyGroup     Identifier
 highlight default link WhichKeyDesc      Function
 
 " Hide status line
-autocmd! FileType which_key
-autocmd  FileType which_key set laststatus=0 noshowmode noruler
-  \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
+" autocmd! FileType which_key
+" autocmd  FileType which_key set laststatus=0 noshowmode noruler
+"   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
@@ -34,9 +39,9 @@ let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " s is for search
-let g:which_key_map.s = {
+let g:which_key_map['s'] = {
       \ 'name' : '+search' ,
-      \ '/' : [':History'     , 'history'],
+      \ '/' : [':History'      , 'history'],
       \ ';' : [':Commands'     , 'commands'],
       \ 'a' : [':Ag'           , 'text Ag'],
       \ 'b' : [':BLines'       , 'current buffer'],
@@ -62,5 +67,3 @@ let g:which_key_map.s = {
       \ 'z' : [':FZF'          , 'FZF'],
       \ }
 
-" Register which key map
-call which_key#register('<Space>', "g:which_key_map")

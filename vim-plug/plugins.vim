@@ -6,7 +6,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
   " Better Syntax Support
   Plug 'sheerun/vim-polyglot'
@@ -19,8 +19,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'jiangmiao/auto-pairs'
 
   " Theme
-  " Plug 'joshdick/onedark.vim'
-  Plug 'dracula/vim'
+  Plug 'joshdick/onedark.vim'
+  " Plug 'dracula/vim'
 
   " Intelljsense with coc
   Plug 'neoclide/coc.nvim', {'branch': 'release'}

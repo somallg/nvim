@@ -4,5 +4,5 @@ if (has("termguicolors"))
 endif
 
 " Theme
-syntax enable
-colorscheme dracula
+syntax on
+colorscheme onedark
