@@ -1,20 +1,20 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/themes/dark.vim
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/keys/which-key.vim
-source $HOME/.config/nvim/general/settings.vim
+" plugins manager
+source ~/.config/nvim/vim-plug/plugins.vim
+" ui themes
+source ~/.config/nvim/themes/vim-one.vim
 
-lua require'plug-colorizer'
+" keybindings and guide
+source ~/.config/nvim/keybindings/no-arrowkeys.vim
+source ~/.config/nvim/keybindings-guide/vim-which-key.vim
+
+" programming language tools
+source ~/.config/nvim/intellisense/coc.vim
+
+" colorizer
+luafile ~/.config/nvim/colorizer/nvim-colorizer.lua
+
+" other settings
+source ~/.config/nvim/general/settings.vim
+
 
 nnoremap <silent> <D-p> :GFiles<CR>
-
-" don't use arrowkeys
-noremap <Up>     <NOP>
-noremap <Down>   <NOP>
-noremap <Left>   <NOP>
-noremap <Right>  <NOP>
-" really, just don't
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
