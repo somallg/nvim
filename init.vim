@@ -2,6 +2,7 @@
 source ~/.config/nvim/vim-plug/plugins.vim
 " ui themes
 source ~/.config/nvim/themes/vim-one.vim
+source ~/.config/nvim/statusline/vim-airline.vim
 
 " keybindings and guide
 source ~/.config/nvim/keybindings/no-arrowkeys.vim
@@ -15,6 +16,5 @@ luafile ~/.config/nvim/colorizer/nvim-colorizer.lua
 
 " other settings
 source ~/.config/nvim/general/settings.vim
-
 
 nnoremap <silent> <D-p> :GFiles<CR>

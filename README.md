@@ -26,19 +26,25 @@ We gonna group each configuration files based on its feature (intellisense, synt
 Order below is the same order when you source config file in `init.vim`
 
 vim-plug/plugins.vim                => vim-plug configuration used to install plugins
+
 themes/onedark.vim                  => store themes configuration inside this folder, only load 1 theme at a time
-keybindings-guide/vim-which-key.vim => vim-which-key plugin which show keybindings in popup
+airline/vim-airline.vim             => provide powerline feature for more information feedback
+
+
 keybindings/no-arrowkeys.vim        => disable Up, Down, Left, Right keys
+keybindings-guide/vim-which-key.vim => vim-which-key plugin which show keybindings in popup
 
+
+syntax-highlight/??.vim             => need syntax highlight and auto indent for typescript/tsx
 intellisense/coc.vim                => Conquer of Completion is a must for developer
-syntax-highlight/syntax.vim     => 
-general/settings.vim            => override default neovim configuration
-general/no-arrowkeys.vim        => override default neovim configuration
-keys
-plug-config
-init.vim                        => nvim default configuration files
-README.md                       => this file
+intellisense/coc-which-key.vim      => coc which-key bindings
 
+project/fzf.vim                     => provide project wise to file wise search functionalites
+project/fzf-which-key.vim           => provide project wise to file wise search functionalites
+
+general/settings.vim                => override default neovim configuration
+init.vim                            => nvim default configuration files
+README.md                           => 
 
 ## Install Vim-Plug
 ```sh
