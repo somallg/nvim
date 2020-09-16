@@ -1,7 +1,9 @@
 " plugins manager
 source ~/.config/nvim/vim-plug/plugins.vim
+
 " ui themes
 source ~/.config/nvim/themes/vim-one.vim
+" statusline
 source ~/.config/nvim/statusline/vim-airline.vim
 
 " keybindings and guide
@@ -10,9 +12,11 @@ source ~/.config/nvim/keybindings-guide/vim-which-key.vim
 
 " programming language tools
 source ~/.config/nvim/intellisense/coc.vim
-
 " colorizer
 luafile ~/.config/nvim/colorizer/nvim-colorizer.lua
+
+" source version control tools
+
 
 " other settings
 source ~/.config/nvim/general/settings.vim
