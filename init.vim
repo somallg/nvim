@@ -2,23 +2,25 @@
 source ~/.config/nvim/vim-plug/plugins.vim
 
 " ui themes
-source ~/.config/nvim/themes/vim-one.vim
+" source ~/.config/nvim/themes/vim-one.vim
 " statusline
-source ~/.config/nvim/statusline/vim-airline.vim
+" source ~/.config/nvim/statusline/vim-airline.vim
 
 " keybindings and guide
-source ~/.config/nvim/keybindings/no-arrowkeys.vim
-source ~/.config/nvim/keybindings-guide/vim-which-key.vim
+" source ~/.config/nvim/keybindings/no-arrowkeys.vim
+" source ~/.config/nvim/keybindings-guide/vim-which-key.vim
 
 " programming language tools
-source ~/.config/nvim/intellisense/coc.vim
+" source ~/.config/nvim/intellisense/coc.vim
 " colorizer
-luafile ~/.config/nvim/colorizer/nvim-colorizer.lua
+" luafile ~/.config/nvim/colorizer/nvim-colorizer.lua
 
 " source version control tools
-
+" source ~/.config/nvim/svc/vim-fugitive.vim
+" source ~/.config/nvim/svc/vim-gitgutter.vim
+" source ~/.config/nvim/svc/vimagit.vim
 
 " other settings
-source ~/.config/nvim/general/settings.vim
+" source ~/.config/nvim/general/settings.vim
 
-nnoremap <silent> <D-p> :GFiles<CR>
+" nnoremap <silent> <D-p> :GFiles<CR>

@@ -2,38 +2,43 @@ call plug#begin(stdpath('data') . '/plugged')
 
   " Theme
   " Plug 'joshdick/onedark.vim'
-  Plug 'rakr/vim-one'
+  " Plug 'rakr/vim-one'
 
   " Statusline support 
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+  " Plug 'vim-airline/vim-airline'
+  " Plug 'vim-airline/vim-airline-themes'
   
   " Which key
-  Plug 'liuchengxu/vim-which-key'
+  " Plug 'liuchengxu/vim-which-key'
 
   " File Explorer
-  Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-  Plug 'ryanoasis/vim-devicons', { 'on': 'NERDTreeToggle' }
+  " Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+  " Plug 'ryanoasis/vim-devicons'
 
   " Programming language support
   " Better Syntax Support, syntastic
-  Plug 'sheerun/vim-polyglot'
+  " Plug 'sheerun/vim-polyglot'
   " Intelljsense with coc
-  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+  " Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   " Auto pairs for '(' '[' '{'
-  Plug 'jiangmiao/auto-pairs'
+  " Plug 'jiangmiao/auto-pairs'
   " Colorizer
-  Plug 'norcalli/nvim-colorizer.lua'
+  " Plug 'norcalli/nvim-colorizer.lua'
 
   " Project management
   " FZF
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+  " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  " Plug 'junegunn/fzf.vim'
   " Sneak
-  Plug 'justinmk/vim-sneak'  
+  " Plug 'justinmk/vim-sneak'  
   " Floaterm
-  Plug 'voldikss/vim-floaterm'
+  " Plug 'voldikss/vim-floaterm'
 
-  " SVC: fugitive
+  " SVC 
+  " Plug 'tpope/vim-fugitive'
+  " Plug 'airblade/vim-gitgutter'
+  Plug 'jreybert/vimagit'
+
+  " Plug 'tpope/vim-sensible'                                               
 
 call plug#end()
