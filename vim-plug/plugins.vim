@@ -1,8 +1,8 @@
 call plug#begin(stdpath('data') . '/plugged')
 
   " Theme
-  " Plug 'rakr/vim-one'
-  Plug 'joshdick/onedark.vim'
+  "Plug 'joshdick/onedark.vim'
+  Plug 'rakr/vim-one'
 
   " Statusline support 
   Plug 'vim-airline/vim-airline'
@@ -14,13 +14,13 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'ryanoasis/vim-devicons'
 
   " Which key
-  " Plug 'liuchengxu/vim-which-key'
+  Plug 'liuchengxu/vim-which-key'
 
   " Programming language support
   " Better Syntax Support, syntastic
   Plug 'sheerun/vim-polyglot'
   " Intelljsense with coc
-  " Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Colorizer

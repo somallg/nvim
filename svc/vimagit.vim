@@ -1,2 +1,2 @@
 " git status
-" nnoremap <leader>gs :MagitOnly<CR>
+nnoremap <leader>gs :MagitOnly<CR>
